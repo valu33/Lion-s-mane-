@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicinal Mushrooms</title>
+    
+  <!--link to bootstrap css-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <!--links js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
+  <!--link from ligthbox gallery-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+  <!--my link to css-->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<header class="container-fluid">
+
+
+<!--Button for modal-->
+<button data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-danger justify-content-end">Sign in for more info!</button>
+
+<!----MODAL-->
+<div class="modal" id="myModal" tabindex="-1" >
+    <div class="modal-dialog modal-lg modal-fullscreen-md-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="h2 text-bg-danger p-3">Log in</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+
+</div>
+
+<div class="modal-body">
+    <form action="code.php" method="post">
+        <label for="userName">User Name</label>
+        <input type="text" pattern="[a-zA-Z]+" placeholder="John Doe" id="userName">
+
+        
+    <label for="password">Password</label>
+    <input type="text" pattern="[a-zA-Z]+" placeholder="****" id="password">
+      
+ </div>
+ <button class="btn btn-outline-danger text-align-end" data-bs-dismiss="modal">Subscribe<button>
+
+   </div>
+ </div> <!--closess modal content-->
+</div> <!--closes modal dialog container-->
+</div><!--closes modal main div -->
+
+
+<!----MENU-->
+<nav class="navbar navbar-expand">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"> Melena de Leona
+
+      <img src="Imagenes/icons8-seta-48.png" alt="Logo" width="60" height="44" class="d-inline-block align-text-top"> <!--brand image-->
+    </a> 
+ 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myMenu" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="myMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.instagram.com">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://web.whatsapp.com/">Whatsapp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://remfungi.com/">Treatment</a>
+        </li>
+      
+      
+      </ul>
+    </div> 
+  </div>
+</nav>
+
+</header> <!--close my header-->
+
+<body>
+  
+<!----img carrousel-->
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide carousel-fade">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" ></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" ></button>
+        </div> <!--if you don t like these indicators you can take this out-->
+
+    <div class="carousel-inner">
+      <div class="carousel-item active col-md-5">
+        <img src="Imagenes/james-wainscoat-f50eYBK6qPA-unsplash.jpg" class="d-block w-100" alt="REISHI">
+      </div> <!--CLOSING FIRST IMG-->
+
+      <div class="carousel-item col-md-5">
+        <img src="Imagenes/jaap-straydog-o9JapjMqjfc-unsplash.jpg" class="d-block w-100" alt="Cola de pavo">
+       
+      </div>
+         </div>
+        </div>  
+    
+         <!--these following containers are the next/prev controls-->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" ></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+       
+ 
+    
+</div>  <!--closes the main container from the carousel-->
+</div> <!--container so it looks centered and better in our html-->
+
+<p class="text-white">Immersed in an artificial world, our bodies have physiologically adapted to withstand stress. We strongly believe that nature is wise and provides us with everything we need to live well.<p>
+<p class="text-white"> They are ancient beings, plants and fungi, that adapted to hostile environments and extreme, adverse temperatures. For this reason, in the same way they adapted over thousands of years to different ecosystems, they developed regulatory (adaptogenic) properties for humans.</p>
+<p class="text-white">They help us reduce our body's exaggerated response to stress in these modern times with more technology, social media, work stress, the need for immediacy, and so on.</p>
+
+
+<h2 class="text-bg-danger col-md-10"> Our magic mushrooms</h2>
+
+<section class="container-fluid">
+<div class="row mb-2 justify-content-between">
+<div class="bg-black text-white col-md-3 text-align-center"> <strong>Lion´s mane:</strong>  It increases cognitive capacity, such as memory and the process of  learning. These effects are related to its neuroprotective properties and its ability to modulate brain plasticity.</div>
+<div class="bg-black text-white col-md-3"> <strong>Reishi:</strong> It is called the mushroom of immortality because of its wide-ranging benefits. Specific applications include controlling blood glucose levels, modulating the immune system, hepatoprotection, bacteriostasis, and more. </div>
+<div class="bg-black text-white col-md-3"> <strong>Cordyceps:</strong> Its effectiveness is particularly evident in improving physical and sexual energy, as well as mood and humor. It is frequently used by athletes or individuals with high energy demands, as well as those undergoing prolonged illness.</div>
+
+</div>
+</section>
+<!---end of mushrooms data-->
+
+
+<script src="JS/code.js"></script>
+
+<script>
+    lightbox.option({
+     
+      'wrapAround': true,
+      'albumLabel': "Imagen %1 de %2"
+    })
+</script>
+
+<footer></footer>
+</body>
+</html>
